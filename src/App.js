@@ -17,13 +17,12 @@ const App = () => {
   const changeProgress = (progress) => {
   setProgress(progress) 
   }
-  
-   
+
     return (
 
       <div>
         <Router>
-        <Navbar/>
+        <Navbar />
         <LoadingBar
         color='#f11946'
         height={3}
@@ -32,25 +31,25 @@ const App = () => {
       />
         <Switch>
           <Route  exact path="/business">
-          <News setProgress={changeProgress}  pageSize={9} key="business" country='in' category='business'/>
+          <News setProgress={changeProgress}  pageSize={9} key="business" country='us' category='business'/>
           </Route>
           <Route exact path="/">
-          <News setProgress={changeProgress}  pageSize={9} key="general" country='in' category='general'/>
+          <News setProgress={changeProgress}  pageSize={9} key="general" country='us' category='general'/>
           </Route>
           <Route exact path="/sports">
-          <News setProgress={changeProgress}  pageSize={9} key="sports" country='in' category='sports'/>
+          <News setProgress={changeProgress}  pageSize={9} key="sports" country='us' category='sports'/>
           </Route>
           <Route exact path="/entertainment">
-          <News setProgress={changeProgress}  pageSize={9} key="entertainment" country='in' category='entertainment'/>
+          <News setProgress={changeProgress}  pageSize={9} key="entertainment" country='us' category='entertainment'/>
           </Route>
           <Route exact path="/technology">
-          <News setProgress={changeProgress}  pageSize={9} key="technology" country='in' category='technology'/>
+          <News setProgress={changeProgress}  pageSize={9} key="technology" country='us' category='technology'/>
           </Route>
           <Route exact path="/health">
-          <News setProgress={changeProgress}  pageSize={9} key="health" country='in' category='health'/>
+          <News setProgress={changeProgress}  pageSize={9} key="health" country='us' category='health'/>
           </Route>
           <Route exact path="/science">
-          <News setProgress={changeProgress}  pageSize={9} key="science" country='in' category='science'/>
+          <News setProgress={changeProgress}  pageSize={9} key="science" country='us' category='science'/>
           </Route>
         </Switch>
         </Router>

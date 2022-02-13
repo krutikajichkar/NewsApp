@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
   
 
 const Navbar = ()=>{
-    
+   
+
         return (
             <div>
                 <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -38,6 +39,18 @@ const Navbar = ()=>{
                         </ul>
                         </div>
                     </div>
+                   
+                    <div class="dropdown mx-5">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <ul class="dropdown-menu me-5 " aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                    </div>
+
                  </nav>
             </div>
         );
