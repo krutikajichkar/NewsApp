@@ -77,7 +77,7 @@ const News = (props)=> {
     
 }
 News.defaultProps ={
-    country : 'us',
+    country : 'in',
     category :'general',
     pageSize : 8
 }
